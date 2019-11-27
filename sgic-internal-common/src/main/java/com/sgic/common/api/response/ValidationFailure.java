@@ -1,29 +1,29 @@
 package com.sgic.common.api.response;
 
 public class ValidationFailure {
-  public ValidationFailure(String field, String code) {
-    this.reason = field;
-    this.code = code;
-  }
+	public ValidationFailure(String field, String code) {
+		this.message = field;
+		this.code = code;
+	}
 
-  private String reason;
+	private String message;
 
-  private String code;
+	private String code;
 
-public String getReason() {
-	return reason;
-}
+	public String getMessage() {
+		return message;
+	}
 
-public void setReason(String reason) {
-	this.reason = reason;
-}
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
-public String getCode() {
-	return code;
-}
+	public String getCode() {
+		return code;
+	}
 
-public void setCode(String code) {
-	this.code = code;
-}
+	public void setCode(String code) {
+		this.code = code;
+	}
 
 }

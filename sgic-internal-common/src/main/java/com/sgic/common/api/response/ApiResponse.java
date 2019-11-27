@@ -21,7 +21,7 @@ public static final ApiResponse OK = new ApiResponse(RestApiResponseStatus.OK);
 
   private Integer statusCode;
   
-  private String serviceName;
+  private String message;
 
   public String getStatus() {
     return status;
@@ -39,12 +39,13 @@ public static final ApiResponse OK = new ApiResponse(RestApiResponseStatus.OK);
     this.statusCode = statusCode;
   }
 
-public String getServiceName() {
-	return serviceName;
+public String getMessage() {
+	return message;
 }
 
-public void setServiceName(String serviceName) {
-	this.serviceName = serviceName;
+public void setMessage(String message) {
+	this.message = message;
 }
 
+  
 }

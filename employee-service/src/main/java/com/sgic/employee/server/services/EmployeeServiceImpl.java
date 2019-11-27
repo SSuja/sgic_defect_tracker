@@ -18,6 +18,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 		Employee responseEmployee = employeeRepository.save(employee);
 		return responseEmployee;
 	}
+
+    @Transactional(readOnly = true)
+	public boolean isEmailAlreadyExist(String email) {
+		return employeeRepository.existsByEmail(email);
+	}
 	
 	
 

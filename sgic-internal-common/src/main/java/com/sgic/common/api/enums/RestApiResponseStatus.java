@@ -8,6 +8,7 @@ public enum RestApiResponseStatus {
   private String status;
 
   private Integer code;
+  
 
   RestApiResponseStatus(String status, Integer code) {
     this.status = status;
